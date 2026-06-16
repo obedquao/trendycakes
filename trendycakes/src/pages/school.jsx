@@ -134,12 +134,12 @@ export default function School() {
               Enroll for Aug 2026
             </a>
 
-            <Link
-              to="/menu"
+            <a
+              href="#curriculum"
               className="border border-white/40 hover:border-white bg-white/10 hover:bg-white/20 backdrop-blur-xs text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-200 text-sm tracking-wide transform active:scale-98"
             >
               View Curriculum
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </section>
@@ -178,7 +178,10 @@ export default function School() {
       </section>
 
       {/*Course Outline*/}
-      <section className="bg-[#f6f5f0] py-20 px-6 sm:px-12 md:px-16 lg:px-24">
+      <section
+        id="curriculum"
+        className="bg-[#f6f5f0] py-20 px-6 sm:px-12 md:px-16 lg:px-24"
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
           {/* Left Side: Layout Intro Headers */}
           <div className="lg:col-span-4 flex flex-col items-start justify-start lg:sticky lg:top-28 h-fit">

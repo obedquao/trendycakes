@@ -28,7 +28,7 @@ export default function About() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2, ease: easeOut }}
+          transition={{ duration: 0.5, ease: easeOut }}
           viewport={{ once: true }}
           className="text-9xl md:text-[15vw] text-pink-500 font-black font-montserrat  -mt-32 z-1 absolute"
         >
