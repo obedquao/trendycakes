@@ -127,7 +127,7 @@ export default function Home() {
             <span className="text-sm font-montserrat font-bold text-pink-500 uppercase tracking-widest">
               Welcome to Trendy Cakes
             </span>
-            <h2 className="text-gray-900 font-roboto font-black text-3xl md:text-4xl mt-2 leading-tight">
+            <h2 className="text-gray-900 font-inter font-semibold text-3xl md:text-4xl mt-2 leading-tight">
               Where Every Slice is a Celebration of Flavor and Artistry
             </h2>
             <p className="text-gray-600 mt-6 font-open-sans text-base md:text-lg leading-relaxed">
@@ -154,11 +154,11 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="h-104 w-full">
+            <div className="h-104 mb-8 mx-6 md:mx-14">
               <img
                 src="/images/homeaboutimg.webp"
                 alt="About Trendy Cakes"
-                className="w-full h-full object-cover rounded-3xl shadow-md"
+                className="w-full h-full object-cover rounded-2xl shadow-md"
               />
             </div>
 
@@ -167,15 +167,15 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.4 }}
-              className="absolute -bottom-4 left-4 bg-pink-500 p-4 rounded-2xl shadow-xl border border-pink-400"
+              className="absolute bottom-2  bg-pink-500 p-4 rounded-lg shadow-lg border border-pink-400"
             >
-              <p className="text-xs text-pink-100 uppercase font-semibold">
+              <p className="text-lg text-pink-100 uppercase font-semibold">
                 Over
               </p>
-              <p className="text-lg md:text-xl font-black text-white leading-tight">
+              <p className="text-lg md:text-2xl font-inter font-black text-white leading-tight">
                 1000+ Satisfied
               </p>
-              <p className="text-sm font-medium text-white opacity-90">
+              <p className="text-xs font-bold text-white opacity-90">
                 Customers
               </p>
             </motion.div>
@@ -185,12 +185,12 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.4 }}
-              className="absolute -bottom-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-gray-100"
+              className="absolute bottom-2 right-0 bg-white/90 backdrop-blur-2xl p-4 rounded-lg shadow-lg border border-gray-100"
             >
-              <p className="text-xs text-pink-400 uppercase font-semibold">
+              <p className="text-lg text-pink-400 uppercase font-semibold">
                 Over
               </p>
-              <p className="text-lg md:text-xl font-black text-pink-500 leading-tight">
+              <p className="text-lg md:text-2xl font-black text-pink-500 leading-tight font-inter">
                 80+ Graduates
               </p>
               <p className="text-xs font-bold text-gray-500 uppercase tracking-wide">
@@ -438,7 +438,7 @@ export default function Home() {
               className="lg:col-span-7"
             >
               <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-900 mb-10">
-                Delivery & Structural Timelines
+                Delivery & Orders
               </h2>
 
               <div className="space-y-8">
@@ -467,7 +467,7 @@ export default function Home() {
                       <div className="flex justify-between">
                         <span>Impromptu Requests</span>
                         <span className="font-bold text-pink-600">
-                          2-Hour Minimum Buffer
+                          2-Hour Minimum is Needed
                         </span>
                       </div>
                     </div>
@@ -484,9 +484,9 @@ export default function Home() {
                       Payment Protocol
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed max-w-md">
-                      Full advanced payment validates your production timeline
-                      entry. Secure processing is completed via Mobile Money or
-                      automated banking conduits.
+                      Full payment is required to confirm and schedule your
+                      order. We accept Mobile Money and Bank Transfers for a
+                      smooth and secure checkout experience.
                     </p>
                   </div>
                 </div>
@@ -502,32 +502,28 @@ export default function Home() {
               className="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 shadow-xs border border-gray-200/60"
             >
               <h3 className="text-sm font-bold text-pink-500 uppercase tracking-wider mb-4">
-                Logistics Matrix
+                Logistics
               </h3>
               <div className="space-y-3 text-sm text-gray-700">
                 <div className="p-3.5 bg-gray-50 rounded-xl border border-gray-100 flex items-center gap-3">
                   <span>🚗</span>
                   <p>
-                    Structured options via{" "}
-                    <strong>Yango, Uber, or Bolt car metrics</strong>.
+                    Delivery via <strong>Yango, Uber or Bolt</strong>.
                   </p>
                 </div>
                 <div className="p-3.5 bg-gray-50 rounded-xl border border-gray-100 flex items-center gap-3">
                   <span>🏍️</span>
-                  <p>
-                    Personalized internal courier lines for pastries and loaf
-                    variations.
-                  </p>
+                  <p>Personalized rider service available</p>
                 </div>
                 <div className="p-4 bg-red-50/60 border border-red-100 text-red-950 rounded-xl text-xs space-y-1.5">
                   <p className="font-bold text-red-700 uppercase tracking-wide">
-                    ⚠️ Transit Indemnity Waiver
+                    ⚠️ Pro Tip for Cakes
                   </p>
                   <p className="leading-relaxed">
-                    Motorcycle transits are heavily discouraged for tier
-                    structures. Clients selecting bike transport layouts assume
-                    complete structural risk variables for transit damage
-                    events.
+                    Motorbikes are not recommended for birthday cake deliveries.
+                    For maximum safety and presentation, we advise using
+                    car-based delivery options. Delivery fees are handled by the
+                    client.
                   </p>
                 </div>
               </div>

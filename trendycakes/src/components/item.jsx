@@ -3,7 +3,11 @@ export default function Item({ name, image, price, details }) {
   return (
     <div className="flex flex-col gap-5 bg-white max-w-75 py-5 px-2  rounded-lg">
       <div className="h-45 md:h-56 w-full overflow-hidden ">
-        <img src={image} className="object-cover w-full h-full" />
+        <img
+          src={image}
+          className="object-cover w-full h-full"
+          loading="lazy"
+        />
       </div>
 
       <div

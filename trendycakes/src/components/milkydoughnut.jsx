@@ -65,7 +65,7 @@ export default function MilkyDoughnutCard() {
         `• *Flavor:* ${selectedFlavor.label}\n` +
         `• *Pack Size:* ${selectedQty.label} (${selectedQty.size})\n` +
         `-----------------------------------------\n` +
-        `*Total Price:* ₵${currentPrice}.00\n\n` +
+        ` *Total Price:* ₵${currentPrice}.00\n\n` +
         `Please let me know payment and pickup details! ✨`,
     );
 
@@ -83,6 +83,7 @@ export default function MilkyDoughnutCard() {
           <div className="relative w-full h-44 rounded-3xl overflow-hidden mb-4 border border-gray-100 shadow-inner">
             <img
               src="/images/milky.webp"
+              loading="lazy"
               alt="Milk Doughnuts Display"
               className="w-full h-full object-cover"
             />

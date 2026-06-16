@@ -389,6 +389,7 @@ export default function School() {
               {/* Background Alumnus Image Asset */}
               <img
                 src="/images/studentimage.jpeg"
+                loading="lazy"
                 alt="Abena Serwaa - Successful Graduate"
                 className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-101 transition duration-500"
               />
@@ -434,6 +435,7 @@ export default function School() {
               <div className="mt-8 pt-6 border-t border-gray-100 flex items-center gap-4">
                 <img
                   src="/images/kofi-avatar.jpg"
+                  loading="lazy"
                   alt="Kofi Mensah avatar portrait"
                   className="w-12 h-12 rounded-full object-cover bg-gray-100 shrink-0"
                 />

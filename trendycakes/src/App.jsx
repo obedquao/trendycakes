@@ -6,11 +6,13 @@ import School from "./pages/school";
 import Contact from "./pages/contact";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

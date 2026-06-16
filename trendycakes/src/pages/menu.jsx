@@ -92,6 +92,7 @@ export default function Menu() {
         <div className="flex justify-center py-5">
           <img
             src="./images/milkybanner.webp"
+            loading="lazy"
             className="rounded-2xl md:rounded-4xl w-80 md:w-160"
           />
         </div>
