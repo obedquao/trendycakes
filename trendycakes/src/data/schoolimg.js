@@ -1,0 +1,96 @@
+// Sample structural dataset for the academy gallery
+const ACADEMY_GALLERY = [
+  {
+    id: 1,
+    category: "practicals",
+    src: "/images/schoolimages/pink1.webp",
+    alt: "Picture of CEO with 3rd Badge Students",
+    size: "lg:col-span-2 lg:row-span-2 h-[450px]",
+  },
+  {
+    id: 2,
+    category: "masterpieces",
+    src: "/images/schoolimages/m1.webp",
+    alt: "Character cake sugarcraft design",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 3,
+    category: "graduations",
+    src: "/images/schoolimages/pink3.webp",
+    alt: "Graduates holding TVET accredited certificates",
+    size: "lg:col-span-1 lg:row-span-2 h-[450px]",
+  },
+  {
+    id: 4,
+    category: "graduations",
+    src: "/images/schoolimages/pink2.webp",
+    alt: "Graduation Ceremony",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 5,
+    category: "Graduations",
+    src: "/images/schoolimages/grad2.webp",
+    alt: "Graduation ceremony",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 6,
+    category: "graduations",
+    src: "/images/schoolimages/pink4.webp",
+    alt: "Graduation ceremony",
+    size: "lg:col-span-2 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 7,
+    category: "graduations",
+    src: "/images/schoolimages/grad4.webp",
+    alt: "Graduation ceremony",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 8,
+    category: "graduations",
+    src: "/images/schoolimages/pink7.webp",
+    alt: "Graduation ceremony",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 9,
+    category: "practicals",
+    src: "/images/schoolimages/class1.webp",
+    alt: "Class demonstration",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 10,
+    category: "practicals",
+    src: "/images/schoolimages/class2.webp",
+    alt: "Class demonstration",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 11,
+    category: "practicals",
+    src: "/images/schoolimages/class3.webp",
+    alt: "Class demonstrations ",
+    size: "lg:col-span-1 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 12,
+    category: "graduations",
+    src: "/images/schoolimages/pink5.webp",
+    alt: "Graduation Ceremony",
+    size: "lg:col-span-2 lg:row-span-1 h-[210px]",
+  },
+  {
+    id: 12,
+    category: "graduations",
+    src: "/images/schoolimages/pink6.webp",
+    alt: "Graduation Ceremony",
+    size: "lg:col-span-2 lg:row-span-1 h-[210px]",
+  },
+];
+
+export default ACADEMY_GALLERY;
