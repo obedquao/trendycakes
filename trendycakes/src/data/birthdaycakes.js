@@ -12,7 +12,7 @@ const birthdayCake = [
     details: "Available on Pre-order",
   },
   {
-    name: "Mickey Mouse Themed Cake",
+    name: "Mickey Mouse  Cake",
     image: "/images/birthday/mickeymouse.webp",
     price: "GH₵ 650",
     details: "Available on Pre-order",
@@ -66,7 +66,7 @@ const birthdayCake = [
     details: "Available on Pre-order",
   },
   {
-    name: "Spongebob Themed Cake",
+    name: "Spongebob Cake",
     image: "/images/birthday/spongebob.webp",
     price: "GH₵ 450",
     details: "Available on Pre-order",
@@ -90,6 +90,12 @@ const birthdayCake = [
     details: "Available on Pre-order",
   },
   {
+    name: "Oreo Birthday Cake",
+    image: "/images/birthday/oreocake.webp",
+    price: "GH₵ 480",
+    details: "Available on Pre-order",
+  },
+  {
     name: "Long Yellow  Birthday Cake",
     image: "/images/birthday/m10.webp",
     price: "GH₵ 800",
@@ -101,12 +107,7 @@ const birthdayCake = [
     price: "GH₵ 950",
     details: "Available on Pre-order",
   },
-  {
-    name: "Oreo Birthday Cake",
-    image: "/images/birthday/oreocake.webp",
-    price: "GH₵ 480",
-    details: "Available on Pre-order",
-  },
+
   {
     name: "Square Fruit Birthday Cake",
     image: "/images/birthday/m9.webp",
