@@ -69,7 +69,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between w-full md:max-w-7xl md:mx-auto px-0 ">
         {/* Logo */}
-        <NavLink to="#home" className="flex items-center gap-3">
+        <NavLink to="/" className="flex items-center gap-3">
           <img
             src="/logo.webp"
             alt="Jay's Bite Logo"
