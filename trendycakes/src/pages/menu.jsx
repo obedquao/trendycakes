@@ -108,9 +108,9 @@ export default function Menu() {
           />
         </div>
         <div className="my-4">
-          <p className="text-3xl font-open-sans font-bold text-center">
+          <p className="text-xl md:text-3xl font-open-sans font-bold text-center px-6">
             {" "}
-            <span className="text-pink-500 mr-8 underline font-inter">
+            <span className="text-pink-500 mr-1 underline font-inter">
               Note:
             </span>
             Money paid is not refundable
