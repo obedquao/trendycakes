@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion"; // Implemented
+import Delivery from "../components/deliverysection";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { PiTiktokLogoFill } from "react-icons/pi";
 import { RiInstagramFill } from "react-icons/ri";
@@ -30,18 +31,17 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-screen bg-black overflow-hidden flex items-center">
         {/* Background Images */}
-        <img
-          src="/hero.jpg"
-          alt="Hero layout"
-          className="hidden md:block absolute inset-0 w-full h-full object-cover"
-        />
-        <img
-          src="/mobilehero.jpg"
-          alt="Hero layout mobile"
-          className="absolute md:hidden inset-0 w-full h-full object-cover"
+
+        <motion.img
+          src="/newhero.webp"
+          alt="Hero image"
+          className="absolute  inset-0 w-full h-full object-cover"
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 8, ease: "easeOut" }}
         />
         {/* Soft backdrop shader mask overlay for text isolation and readability */}
-        <div className="absolute inset-0 bg-white/10 md:bg-transparent" />
+        <div className="absolute inset-0 bg-black/50" />
 
         {/* Content Container */}
         <motion.div
@@ -52,7 +52,7 @@ export default function Home() {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-left text-gray-950 leading-tight"
+            className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-left text-white leading-tight"
           >
             Affordable Luxury <br />
             In Every Bite
@@ -60,7 +60,7 @@ export default function Home() {
 
           <motion.p
             variants={fadeInUp}
-            className="text-lg md:text-xl text-left font-inter text-gray-800 mt-4 max-w-xl"
+            className="text-lg md:text-xl text-left font-inter text-white/90 mt-4 max-w-xl"
           >
             Delicious cakes, pastries, and professional baking training crafted
             with passion, quality, and affordability.
@@ -248,9 +248,9 @@ export default function Home() {
                     <div className="space-y-3">
                       {[
                         ["Birthday Cakes", "From ₵150"],
-                        ["Wedding Cakes", "From ₵1200"],
-                        ["Cakes for special events", "From ₵160"],
-                        ["Cake parfaits", "From ₵80"],
+                        ["Wedding Cakes", "From ₵1500"],
+                        ["Cakes for special events", "From ₵500"],
+                        ["Cake parfaits", "From ₵40"],
                       ].map(([name, price]) => (
                         <div
                           key={name}
@@ -427,109 +427,7 @@ export default function Home() {
 
       {/* Delivery & Orders Section */}
       <section className="py-24 bg-[#FAF8F3] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-12 items-center">
-            {/* Left Side Accordions/Lines */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="lg:col-span-7"
-            >
-              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-900 mb-10">
-                Delivery & Orders
-              </h2>
-
-              <div className="space-y-8">
-                {/* Turnaround block */}
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-pink-50 flex items-center justify-center shrink-0 border border-pink-100">
-                    🕒
-                  </div>
-                  <div className="w-full">
-                    <h3 className="text-base font-bold text-gray-900 mb-2">
-                      Notice Requirements
-                    </h3>
-                    <div className="space-y-2 text-sm text-gray-600 max-w-md">
-                      <div className="flex justify-between border-b border-gray-200/60 pb-1.5">
-                        <span>Large Catering Orders</span>
-                        <span className="font-bold text-gray-900">
-                          48 Hours Notice
-                        </span>
-                      </div>
-                      <div className="flex justify-between border-b border-gray-200/60 pb-1.5">
-                        <span>Standard Birthday Cakes</span>
-                        <span className="font-bold text-gray-900">
-                          24 Hours Notice
-                        </span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Impromptu Requests</span>
-                        <span className="font-bold text-pink-600">
-                          2-Hour Minimum is Needed
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Policy block */}
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-pink-50 flex items-center justify-center shrink-0 border border-pink-100">
-                    💳
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-gray-900 mb-1">
-                      Payment Protocol
-                    </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-md">
-                      Full payment is required to confirm and schedule your
-                      order. We accept Mobile Money and Bank Transfers for a
-                      smooth and secure checkout experience.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Right Side Info Box */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="lg:col-span-5 bg-white rounded-3xl p-6 md:p-8 shadow-xs border border-gray-200/60"
-            >
-              <h3 className="text-sm font-bold text-pink-500 uppercase tracking-wider mb-4">
-                Logistics
-              </h3>
-              <div className="space-y-3 text-sm text-gray-700">
-                <div className="p-3.5 bg-gray-50 rounded-xl border border-gray-100 flex items-center gap-3">
-                  <span>🚗</span>
-                  <p>
-                    Delivery via <strong>Yango, Uber or Bolt</strong>.
-                  </p>
-                </div>
-                <div className="p-3.5 bg-gray-50 rounded-xl border border-gray-100 flex items-center gap-3">
-                  <span>🏍️</span>
-                  <p>Personalized rider service available</p>
-                </div>
-                <div className="p-4 bg-red-50/60 border border-red-100 text-red-950 rounded-xl text-xs space-y-1.5">
-                  <p className="font-bold text-red-700 uppercase tracking-wide">
-                    ⚠️ Pro Tip for Cakes
-                  </p>
-                  <p className="leading-relaxed">
-                    Motorbikes are not recommended for birthday cake deliveries.
-                    For maximum safety and presentation, we advise using
-                    car-based delivery options. Delivery fees are handled by the
-                    client.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
+        <Delivery />
       </section>
     </>
   );

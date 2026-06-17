@@ -24,6 +24,54 @@ const birthdayCake = [
     details: "Available on Pre-order",
   },
   {
+    name: "Frozen Character Cake",
+    image: "/images/birthday/frozen1.webp",
+    price: "GH₵ 680",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Frozen Character Cake",
+    image: "/images/birthday/frozen2.webp",
+    price: "GH₵ 650",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Unicorn Character Cake",
+    image: "/images/birthday/unicorn.webp",
+    price: "GH₵ 700",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Twin Character cake",
+    image: "/images/birthday/twincake1.webp",
+    price: "GH₵ 1000",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Twin Character cake",
+    image: "/images/birthday/twincake2.webp",
+    price: "GH₵ 1200",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Bluey Character cake",
+    image: "/images/birthday/bluey.webp",
+    price: "GH₵ 600",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Cocomelon Unisex cake",
+    image: "/images/birthday/cocomelon.webp",
+    price: "GH₵ 500",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Naruto Character cake",
+    image: "/images/birthday/naruto.webp",
+    price: "GH₵ 580",
+    details: "Available on Pre-order",
+  },
+  {
     name: "PawPatrol Themed Cake",
     image: "/images/birthday/pawpatrol.webp",
     price: "GH₵ 600",
@@ -68,7 +116,7 @@ const birthdayCake = [
   {
     name: "Spongebob Cake",
     image: "/images/birthday/spongebob.webp",
-    price: "GH₵ 450",
+    price: "GH₵ 500",
     details: "Available on Pre-order",
   },
   {
@@ -112,6 +160,92 @@ const birthdayCake = [
     name: "Square Fruit Birthday Cake",
     image: "/images/birthday/m9.webp",
     price: "GH₵ 1800",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Square Medium Cake",
+    image: "/images/birthday/b3.webp",
+    price: "GH₵ 1200",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customized birthday cake",
+    image: "/images/birthday/b4.webp",
+    price: "GH₵ 700",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customized  Shirt Cake for Men",
+    image: "/images/birthday/b5.webp",
+    price: "GH₵ 700",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Name Customize Birthday Cake ",
+    image: "/images/birthday/b6.webp",
+    price: "GH₵ 550",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customized Picture Cake",
+    image: "/images/birthday/b7.webp",
+    price: "GH₵ 700",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customized Birthday cake",
+    image: "/images/birthday/b8.webp",
+    price: "GH₵ 700",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "For the classy girlie",
+    image: "/images/birthday/b9.webp",
+    price: "GH₵ 1400",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customize Birthday cake large",
+    image: "/images/birthday/b11.webp",
+    price: "GH₵ 1200",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Butter Cream Unisex Birthday",
+    image: "/images/birthday/b12.webp",
+    price: "GH₵ 1300",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customized Jack Daniels Men Cake",
+    image: "/images/birthday/b13.webp",
+    price: "GH₵ 1500",
+    details: "Available on Pre-order",
+  },
+
+  {
+    name: "7inches Elegant Ganache Dripe Customized Cake",
+    image: "/images/birthday/b1.webp",
+    price: "GH₵ 1100",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Customized Picture Large Birthday Cake",
+    image: "/images/birthday/b2.webp",
+    price: "GH₵ 850",
+    details: "Available on Pre-order",
+  },
+
+  {
+    name: "Birthday Cake Package (Cake, pastries, Milky Doughnuts) ",
+    image: "/images/birthday/p1.webp",
+    price: "Dm for Price",
+    details: "Available on Pre-order",
+  },
+  {
+    name: "Simply made classy for babe ",
+    image: "/images/birthday/b10.webp",
+    price: "GH₵ 650",
     details: "Available on Pre-order",
   },
 ];

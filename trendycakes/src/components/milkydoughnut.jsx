@@ -3,37 +3,68 @@ import { motion, AnimatePresence } from "framer-motion";
 import { PiShoppingCartSimpleBold, PiCaretDownBold } from "react-icons/pi";
 
 // 🛠️ MATRIX DATA CONFIGURATION
-// Prices are now uniquely nested inside each flavor for every specific quantity pack
+// Each combination configuration now handles its own distinct visual asset path string
 const DONUT_MENU = [
   {
     id: "milk-glaze",
     label: "Condensed Milk Filling",
-    prices: { qty4: 95, qty6: 105, qty8: 140 },
+    prices: { qty4: 75, qty6: 105, qty8: 140 },
+    images: {
+      qty4: "/images/donuts/milk-4.webp",
+      qty6: "/images/donuts/milk-6.webp",
+      qty8: "/images/donuts/milk-8.webp",
+    },
   },
   {
     id: "vanilla",
     label: "Vanilla Milk Filling",
     prices: { qty4: 75, qty6: 105, qty8: 140 },
+    images: {
+      qty4: "/images/donuts/milk-4.webp",
+      qty6: "/images/donuts/milk-6.webp",
+      qty8: "/images/donuts/milk-8.webp",
+    },
+  },
+
+  {
+    id: "strawberry",
+    label: "Strawberry filling",
+    prices: { qty4: 75, qty6: 105, qty8: 140 },
+    images: {
+      qty4: "/images/donuts/milk-4.webp",
+      qty6: "/images/donuts/milk-6.webp",
+      qty8: "/images/donuts/mixed3-8.webp",
+    },
   },
   {
     id: "chocolate",
     label: "Chocolate filling",
     prices: { qty4: 95, qty6: 150, qty8: 185 },
-  },
-  {
-    id: "strawberry",
-    label: "Strawberry filling",
-    prices: { qty4: 75, qty6: 105, qty8: 140 },
+    images: {
+      qty4: "/images/donuts/mixed3-4.webp",
+      qty6: "/images/donuts/mixed3-6.webp",
+      qty8: "/images/donuts/chocolate-8.webp",
+    },
   },
   {
     id: "Two mixed fillings",
     label: "Two mixed fillings",
     prices: { qty4: 85, qty6: 125, qty8: 150 },
+    images: {
+      qty4: "/images/donuts/mixed3-4.webp",
+      qty6: "/images/donuts/mixed3-6.webp",
+      qty8: "/images/donuts/mixed3-8.webp",
+    },
   },
   {
     id: "Three mixed fillings",
     label: "Three mixed fillings",
     prices: { qty4: 95, qty6: 135, qty8: 160 },
+    images: {
+      qty4: "/images/donuts/mixed3-4.webp",
+      qty6: "/images/donuts/mixed3-6.webp",
+      qty8: "/images/donuts/mixed3-8.webp",
+    },
   },
 ];
 
@@ -54,6 +85,9 @@ export default function MilkyDoughnutCard() {
 
   // Dynamically extract the correct price based on combination selections
   const currentPrice = selectedFlavor.prices[selectedQty.id];
+
+  // ✅ DYNAMIC SELECTION MATCH: Extract the correct image layout source string
+  const currentImage = selectedFlavor.images[selectedQty.id];
 
   const handleWhatsAppOrder = () => {
     const WHATSAPP_NUMBER = "233243685403";
@@ -79,15 +113,24 @@ export default function MilkyDoughnutCard() {
     <div className="flex justify-center items-center py-12 px-4 bg-gray-50">
       <div className="w-full max-w-sm bg-white rounded-[2rem] p-5 shadow-xl border border-gray-100 flex flex-col justify-between min-h-[460px]">
         <div>
-          {/* Card Image Display */}
-          <div className="relative w-full h-44 rounded-3xl overflow-hidden mb-4 border border-gray-100 shadow-inner">
-            <img
-              src="/images/milky.webp"
-              loading="lazy"
-              alt="Milk Doughnuts Display"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full text-[10px] font-bold text-pink-600 tracking-wider uppercase shadow-2xs border border-gray-100/50">
+          {/* Card Image Display Wrapper */}
+          <div className="relative w-full h-44 rounded-3xl overflow-hidden mb-4 border border-gray-100 shadow-inner bg-gray-50">
+            {/* ✅ FLUID IMAGE CROSSFADE MATRIX */}
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentImage}
+                src={currentImage}
+                initial={{ opacity: 0, scale: 1.02 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                loading="lazy"
+                alt={`${selectedFlavor.label} - ${selectedQty.label}`}
+                className="w-full h-full object-cover absolute inset-0"
+              />
+            </AnimatePresence>
+
+            <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-xs px-3 py-1 rounded-full text-[10px] font-bold text-pink-600 tracking-wider uppercase shadow-2xs border border-gray-100/50 z-10">
               Fresh Daily
             </div>
           </div>
@@ -199,9 +242,8 @@ export default function MilkyDoughnutCard() {
                           }`}
                         >
                           <span>{qty.label}</span>
-                          {/* Shows the custom price calculation right inside the selection list drawer dynamically */}
                           <span className="font-bold text-gray-900">
-                            ₵{selectedFlavor.prices[qty.id]}
+                            Ref: ₵{selectedFlavor.prices[qty.id]}
                           </span>
                         </button>
                       </li>

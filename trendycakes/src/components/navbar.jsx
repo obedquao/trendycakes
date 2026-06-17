@@ -75,11 +75,11 @@ export default function Navbar() {
             alt="Jay's Bite Logo"
             className="h-12 md:h-10 w-auto"
           />
-          <div className="hidden md:flex flex-col leading-tight">
+          <div className="flex flex-col leading-tight">
             <span className="font-bold text-lg text-pink-500">
               Trendy Cakes
             </span>
-            <span className="text-sm text-slate-600">& Pastries</span>
+            <span className="text-sm text-white/80">& Pastries</span>
           </div>
         </NavLink>
 

@@ -61,9 +61,15 @@ const snacks = [
     details: "Available in stock",
   },
   {
-    name: "Large baked chips",
+    name: "Chips and Chinchin",
+    image: "/images/snacks/chinchin.webp",
+    price: "GH₵ 20",
+    details: "Available in stock",
+  },
+  {
+    name: "Family Pack chips",
     image: "/images/snacks/lbakedchips.webp",
-    price: "GH₵ 120",
+    price: "GH₵ 150",
     details: "Available in stock",
   },
 ];

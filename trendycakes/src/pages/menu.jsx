@@ -6,7 +6,9 @@ import birthdayCake from "../data/birthdaycakes";
 import weddingCakes from "../data/weddingcakes";
 import customEventCake from "../data/eventcakes";
 import cupcake from "../data/cupcakes";
+import bento from "../data/bento";
 import MilkyDoughnutCard from "../components/milkydoughnut";
+import Delivery from "../components/deliverysection";
 
 export default function Menu() {
   const scroll = [
@@ -14,8 +16,13 @@ export default function Menu() {
     { image: "./icons/snacks.png", text: "Snacks", link: "#snacks" },
     {
       image: "./icons/custom.png",
-      text: "CupCakes and Bento",
+      text: "CupCakes ",
       link: "#cupcakes",
+    },
+    {
+      image: "./icons/custom.png",
+      text: "Bento and mini cake",
+      link: "#bento",
     },
     {
       image: "./icons/birthday.png",
@@ -70,6 +77,10 @@ export default function Menu() {
           Discover our selection of delicious cakes, pastries, doughnuts,
           drinks, and treats crafted to make every occasion special.
         </p>
+        <p className="text-slate-700 text-center font-inter px-6 md:px-64 mt-8">
+          Cake Flavors 🎂: Chocolate | Vanilla | Red Velvet | Strawberry |
+          Orange | Cookies and Cream.
+        </p>
       </section>
 
       {/* menu types of sections */}
@@ -96,15 +107,24 @@ export default function Menu() {
             className="rounded-2xl md:rounded-4xl w-80 md:w-160"
           />
         </div>
+        <div className="my-4">
+          <p className="text-3xl font-open-sans font-bold text-center">
+            {" "}
+            <span className="text-pink-500 mr-8 underline font-inter">
+              Note:
+            </span>
+            Money paid is not refundable
+          </p>
+        </div>
         <div>
           <MilkyDoughnutCard />
         </div>
       </section>
 
       {/* menu items */}
-      <section className="bg-slate-50 ">
+      <section className="bg-slate-50 pb-16">
         {/* Juices */}
-        <section id="juice" className="pt-24">
+        <section id="juice" className="pt-16">
           <h2 className="text-pink-500 text-3xl font-bold text-center font-open-sans">
             Juices
           </h2>
@@ -155,7 +175,7 @@ export default function Menu() {
           </motion.div>
         </section>
 
-        {/*Bento and cupcakes */}
+        {/* cupcakes */}
         <section id="cupcakes" className="pt-24">
           <h2 className="text-pink-500 text-3xl font-bold text-center font-open-sans">
             Cupcakes & Bento
@@ -169,6 +189,32 @@ export default function Menu() {
             className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y divide-gray-200 bg-gray-50 mt-5"
           >
             {cupcake.map((itemData, index) => (
+              <motion.div variants={item} key={index}>
+                <Item
+                  name={itemData.name}
+                  image={itemData.image}
+                  price={itemData.price}
+                  details={itemData.details}
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </section>
+
+        {/* Bento and mini Cakes */}
+        <section id="cupcakes" className="pt-24">
+          <h2 className="text-pink-500 text-3xl font-bold text-center font-open-sans">
+            Mini/ Budget Friendly Cakes
+          </h2>
+
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y divide-gray-200 bg-gray-50 mt-5"
+          >
+            {bento.map((itemData, index) => (
               <motion.div variants={item} key={index}>
                 <Item
                   name={itemData.name}
@@ -262,6 +308,11 @@ export default function Menu() {
             ))}
           </motion.div>
         </section>
+      </section>
+
+      {/* Delivery & Orders Section*/}
+      <section className="py-24 bg-[#FAF8F3] overflow-hidden ">
+        <Delivery />
       </section>
     </>
   );
