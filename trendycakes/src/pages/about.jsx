@@ -23,6 +23,8 @@ export default function About() {
   };
   return (
     <>
+      {/*  SEO */}
+
       {/*  Section Hero*/}
       <section className="relative flex items-center justify-center overflow-hidden h-screen ">
         <motion.h1
