@@ -9,6 +9,7 @@ import cupcake from "../data/cupcakes";
 import bento from "../data/bento";
 import MilkyDoughnutCard from "../components/milkydoughnut";
 import Delivery from "../components/deliverysection";
+import SEO from "../components/SEO";
 
 export default function Menu() {
   const scroll = [
@@ -62,6 +63,27 @@ export default function Menu() {
 
   return (
     <>
+      <SEO
+        title="Menu | Cakes, Pastries, Doughnuts & Juices in Ghana"
+        description="Explore Trendy Cakes & Pastries menu: birthday cakes, wedding cakes, cupcakes, bento cakes, milky doughnuts, small chops, sobolo and fresh fruit juices."
+        path="/menu"
+        image="/images/homecake.webp"
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Menu",
+            name: "Trendy Cakes & Pastries Menu",
+            hasMenuSection: [
+              { "@type": "MenuSection", name: "Birthday Cakes" },
+              { "@type": "MenuSection", name: "Wedding Cakes" },
+              { "@type": "MenuSection", name: "Milky Doughnuts" },
+              { "@type": "MenuSection", name: "Pastries and Small Chops" },
+              { "@type": "MenuSection", name: "Fresh Fruit Juices and Sobolo" },
+            ],
+          },
+        ]}
+      />
+
       {/*Menu text */}
       <section className="bg-slate-50 pt-16">
         <motion.h1

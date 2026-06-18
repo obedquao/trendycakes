@@ -4,6 +4,7 @@ import { PiSpiralDuotone } from "react-icons/pi";
 import { FaHourglassHalf } from "react-icons/fa";
 import { PiStudentFill } from "react-icons/pi";
 import { PiCertificateFill } from "react-icons/pi";
+import SEO from "../components/SEO";
 export default function About() {
   // Global smooth transition setting
   const smoothTransition = { duration: 0.8, ease: [0.215, 0.61, 0.355, 1] };
@@ -23,7 +24,25 @@ export default function About() {
   };
   return (
     <>
-      {/*  SEO */}
+      <SEO
+        title="About Trendy Cakes & Pastries | Magdalene Asomaning"
+        description="Learn about Trendy Cakes & Pastries, founded by Magdalene Asomaning to provide quality affordable cakes, pastries and baking education in Ghana."
+        path="/about"
+        image="/images/ceoimage.webp"
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Magdalene Asomaning",
+            jobTitle: "Founder and CEO",
+            worksFor: {
+              "@type": "Bakery",
+              name: "Trendy Cakes & Pastries",
+            },
+            image: "https://trendycakesandpastries.com/images/ceoimage.webp",
+          },
+        ]}
+      />
 
       {/*  Section Hero*/}
       <section className="relative flex items-center justify-center overflow-hidden h-screen ">

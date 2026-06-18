@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import roadmap from "../data/course";
 import AcademyGallery from "../components/schoolgallery";
+import SEO from "../components/SEO";
 import {
   PiCalendarBlankFill,
   PiClockFill,
@@ -72,6 +73,27 @@ export default function School() {
   ];
   return (
     <>
+      <SEO
+        title="Baking School in Ghana | Trendy Cakes & Pastries"
+        description="Join Trendy Cakes & Pastries baking school in Ghana for TVET-affiliated cake making, sugar craft and pastries training with practical hands-on lessons."
+        path="/school"
+        image="/training-og.webp"
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "Cake Making, Sugar Craft and Pastries Training",
+            description:
+              "Hands-on baking training covering cake making, sugar craft, pastries and business-ready baking skills.",
+            provider: {
+              "@type": "Organization",
+              name: "Trendy Cakes & Pastries",
+              sameAs: "https://trendycakesandpastries.com",
+            },
+          },
+        ]}
+      />
+
       {/* Hero */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         {/* 1. Background Image Wrapper */}

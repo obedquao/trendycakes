@@ -2,10 +2,18 @@ import { IoLocation } from "react-icons/io5";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { motion } from "framer-motion";
+import SEO from "../components/SEO";
 
 export default function Contact() {
   return (
     <>
+      <SEO
+        title="Contact Trendy Cakes & Pastries | Order Cakes in Ghana"
+        description="Contact Trendy Cakes & Pastries in Ablekuma, Point 5 to order cakes, pastries, fresh juices, doughnuts or ask about baking school admissions."
+        path="/contact"
+        image="/contact-og.webp"
+      />
+
       <section className="pt-24">
         <div className="w-full h-[40vh] relative mb-20 flex justify-center items-center">
           <img

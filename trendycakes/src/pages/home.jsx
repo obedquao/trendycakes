@@ -6,6 +6,7 @@ import { PiTiktokLogoFill } from "react-icons/pi";
 import { RiInstagramFill } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
 import homeImages from "../data/homeimages";
+import SEO from "../components/SEO";
 
 export default function Home() {
   // Master Animation Configs
@@ -28,6 +29,12 @@ export default function Home() {
 
   return (
     <>
+      <SEO
+        title="Trendy Cakes & Pastries | Cakes, Pastries & Baking School in Ghana"
+        description="Order affordable birthday cakes, wedding cakes, pastries, milky doughnuts, fresh juices and join TVET-affiliated baking training in Ghana."
+        path="/"
+      />
+
       {/* Hero Section */}
       <section className="relative w-full h-screen bg-black overflow-hidden flex items-center">
         {/* Background Images */}
