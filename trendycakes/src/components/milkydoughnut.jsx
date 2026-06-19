@@ -141,8 +141,7 @@ export default function MilkyDoughnutCard() {
               Milky Doughnuts
             </h3>
             <p className="text-xxs text-gray-400 font-medium">
-              Authentic soft, sugar-dusted cloud donuts with gourmet cream
-              fillings.
+              Authentic soft, milk powdered donuts with gourmet cream fillings.
             </p>
           </div>
 

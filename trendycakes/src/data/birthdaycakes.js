@@ -248,5 +248,41 @@ const birthdayCake = [
     price: "GH₵ 650",
     details: "Available on Pre-order",
   },
+  {
+    name: "White and Ash 6inches tall medium Unisex Birthday Cake",
+    image: "/images/birthday/wanda.webp",
+    price: "GH₵ 600",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Redvelvet Heartshaped Cake",
+    image: "/images/birthday/heartshaped.webp",
+    price: "GH₵ 600",
+    details: "Available on pre-order",
+  },
+  {
+    name: "6 inches 1 layer Mini Cake",
+    image: "/images/birthday/sizedtall.webp",
+    price: "GH₵ 200",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Purple and White Female birthday Cake",
+    image: "/images/birthday/pandw.webp",
+    price: "GH₵ 580",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Blue and white simple birthday cake ",
+    image: "/images/birthday/blue.webp",
+    price: "GH₵ 300",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Brownie chocolate dripped Birthday Cake ",
+    image: "/images/birthday/brownie.webp",
+    price: "GH₵ 300",
+    details: "Available on pre-order",
+  },
 ];
 export default birthdayCake;

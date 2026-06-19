@@ -43,13 +43,13 @@ const snacks = [
     details: "Available in stock",
   },
   {
-    name: "Frozen springrolls",
+    name: "Frozen springrolls (10 pieces)",
     image: "/images/snacks/springrolls.webp",
     price: "GH₵ 55",
     details: "Available in stock",
   },
   {
-    name: "Frozen samosa",
+    name: "Frozen samosa (10 pieces)",
     image: "/images/snacks/samosa.webp",
     price: "GH₵ 60",
     details: "Available in stock",

@@ -23,5 +23,11 @@ const customEventCake = [
     price: "GH₵ 900",
     details: "Available only on Pre-Order",
   },
+  {
+    name: "Chef Jacket Creative Cake",
+    image: "/images/custom/sp4.webp",
+    price: "GH₵ 1800",
+    details: "Available only on Pre-Order",
+  },
 ];
 export default customEventCake;

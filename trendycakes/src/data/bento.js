@@ -59,5 +59,29 @@ const bento = [
     price: "GH₵ 200",
     details: "Available on pre-order",
   },
+  {
+    name: "Creamy Cremo Mini cake",
+    image: "/images/bento/creamy.webp",
+    price: "GH₵ 300",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Congratulations Mini Cake",
+    image: "/images/bento/congratsmini.webp",
+    price: "GH₵ 250",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Val’s themed Mini Cake",
+    image: "/images/bento/valsmini.webp",
+    price: "GH₵ 200",
+    details: "Available on pre-order",
+  },
+  {
+    name: "Customized Pinkish mini cake",
+    image: "/images/bento/pinkish.webp",
+    price: "GH₵ 370",
+    details: "Available on pre-order",
+  },
 ];
 export default bento;
