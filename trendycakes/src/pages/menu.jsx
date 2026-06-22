@@ -126,6 +126,11 @@ export default function Menu() {
           <img
             src="./images/milkybanner.webp"
             loading="lazy"
+            className="rounded-2xl hidden md:rounded-4xl w-80 md:w-160"
+          />
+          <img
+            src="./images/promoimage.jpg"
+            loading="lazy"
             className="rounded-2xl md:rounded-4xl w-80 md:w-160"
           />
         </div>

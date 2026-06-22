@@ -25,8 +25,8 @@ const snacks = [
   {
     name: "Medium cake in bowl",
     image: "/images/snacks/bowl.webp",
-    price: "GH₵ 50",
-    promo: "GHC 40",
+    price: "GH₵ 40",
+    promo: "GHC 50",
     details: "Available in stock",
   },
   {
