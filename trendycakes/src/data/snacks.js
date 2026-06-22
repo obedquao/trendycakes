@@ -30,17 +30,26 @@ const snacks = [
     details: "Available in stock",
   },
   {
+    name: "Milky Oreo Loaf Cake",
+    image: "/images/snacks/oreoloaf.webp",
+    price: "GH₵ 60",
+    promo: "GH₵ 70",
+    details: "Available in stock",
+  },
+  {
+    name: "Chips and Chinchin",
+    image: "/images/snacks/chinchin.webp",
+    price: "GH₵ 15",
+    promo: "GH₵ 20",
+    details: "Available in stock",
+  },
+  {
     name: "Baked Chips",
     image: "/images/snacks/bakedchips.webp",
     price: "GH₵ 15",
     details: "Available in stock",
   },
-  {
-    name: "Milky Oreo Loaf Cake",
-    image: "/images/snacks/oreoloaf.webp",
-    price: "GH₵ 70",
-    details: "Available in stock",
-  },
+
   {
     name: "Banana Loaf Cake",
     image: "/images/snacks/bananaloaf.webp",
@@ -65,12 +74,7 @@ const snacks = [
     price: "GH₵ 35",
     details: "Available in stock",
   },
-  {
-    name: "Chips and Chinchin",
-    image: "/images/snacks/chinchin.webp",
-    price: "GH₵ 20",
-    details: "Available in stock",
-  },
+
   {
     name: "Family Pack chips",
     image: "/images/snacks/lbakedchips.webp",

@@ -170,6 +170,7 @@ export default function Menu() {
                   name={itemData.name}
                   image={itemData.image}
                   price={itemData.price}
+                  promo={itemData.promo}
                   details={itemData.details}
                 />
               </motion.div>
