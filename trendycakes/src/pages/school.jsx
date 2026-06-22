@@ -466,10 +466,10 @@ export default function School() {
                 />
                 <div className="flex flex-col">
                   <span className="text-sm font-bold text-gray-900 tracking-wide">
-                    Kofi Mensah
+                    Mrs Juttah Tetteh
                   </span>
                   <span className="text-xs text-gray-500 font-medium mt-0.5">
-                    Head Pastry Chef, Elite Hotel
+                    Head Pastry Chef
                   </span>
                 </div>
               </div>

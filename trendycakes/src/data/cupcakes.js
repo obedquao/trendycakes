@@ -38,7 +38,8 @@ const cupcake = [
   {
     name: "Bento",
     image: "/images/bento/bento1.webp",
-    price: "GH₵ 120",
+    price: "GH₵ 100",
+    promo: "GH₵ 120",
     details: "Available on pre-order",
   },
   {

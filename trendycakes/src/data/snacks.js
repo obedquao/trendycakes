@@ -1,8 +1,9 @@
 const snacks = [
   {
-    name: "Baked Chips",
-    image: "/images/snacks/bakedchips.webp",
-    price: "GH₵ 15",
+    name: "Cake in Cup",
+    image: "/images/snacks/cup.webp",
+    promo: "GH₵ 40",
+    price: "GH₵ 30",
     details: "Available in stock",
   },
   {
@@ -20,17 +21,18 @@ const snacks = [
     promo: "GHC 80",
     details: "Available in stock",
   },
-  {
-    name: "Cake in Cup",
-    image: "/images/snacks/cup.webp",
-    price: "GH₵ 40",
-    details: "Available in stock",
-  },
+
   {
     name: "Medium cake in bowl",
     image: "/images/snacks/bowl.webp",
     price: "GH₵ 50",
     promo: "GHC 40",
+    details: "Available in stock",
+  },
+  {
+    name: "Baked Chips",
+    image: "/images/snacks/bakedchips.webp",
+    price: "GH₵ 15",
     details: "Available in stock",
   },
   {
