@@ -8,6 +8,7 @@ import customEventCake from "../data/eventcakes";
 import cupcake from "../data/cupcakes";
 import bento from "../data/bento";
 import MilkyDoughnutCard from "../components/milkydoughnut";
+import ItemIncrement from "../components/itemincrement";
 import Delivery from "../components/deliverysection";
 import SEO from "../components/SEO";
 
@@ -165,7 +166,7 @@ export default function Menu() {
           >
             {juice.map((itemData, index) => (
               <motion.div variants={item} key={index}>
-                <Item
+                <ItemIncrement
                   name={itemData.name}
                   image={itemData.image}
                   price={itemData.price}
@@ -191,7 +192,7 @@ export default function Menu() {
           >
             {snacks.map((itemData, index) => (
               <motion.div variants={item} key={index}>
-                <Item
+                <ItemIncrement
                   name={itemData.name}
                   image={itemData.image}
                   price={itemData.price}
