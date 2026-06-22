@@ -8,14 +8,16 @@ const snacks = [
   {
     name: "Brownies",
     image: "/images/snacks/brownies.webp",
-    price: "GH₵ 70",
+    price: "GH₵ 60",
+    promo: "GHC 70",
     details: "Available in stock",
   },
 
   {
     name: "Large Cake in bowl",
     image: "/images/snacks/largebowl.webp",
-    price: "GH₵ 80",
+    price: "GH₵ 70",
+    promo: "GHC 80",
     details: "Available in stock",
   },
   {
@@ -28,6 +30,7 @@ const snacks = [
     name: "Medium cake in bowl",
     image: "/images/snacks/bowl.webp",
     price: "GH₵ 50",
+    promo: "GHC 40",
     details: "Available in stock",
   },
   {

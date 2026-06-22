@@ -1,4 +1,4 @@
-export default function Item({ name, image, price, details }) {
+export default function Item({ name, image, price, details, promo }) {
   const message = `Hello! I'm interested in ordering the ${name} priced at ${price}. `;
   return (
     <div className="flex flex-col gap-5 bg-white max-w-75 py-5 px-2  rounded-lg">
@@ -15,8 +15,10 @@ export default function Item({ name, image, price, details }) {
       "
       >
         <h3 className=" text-lg font-semibold">{name}</h3>
+
         <p className="text-green-600  text-sm">{details}</p>
         <h3 className="text-secondary font-bold">{price}</h3>
+        <p className="text-gray-500 line-through text-sm">{promo}</p>
         <a
           href={`https://wa.me/233243685403?text=${encodeURIComponent(message)}`}
           className="border border-pink-500 bg-pink-500 rounded-2xl py-1 px-5 text-base text-center text-white hover:cursor-pointer hover:text-pink-500 hover:bg-white transition-all ease-out "

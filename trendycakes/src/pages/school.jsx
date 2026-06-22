@@ -459,7 +459,7 @@ export default function School() {
               {/* Lower Content Group: Profile Avatar & Biographic Sub-label details */}
               <div className="mt-8 pt-6 border-t border-gray-100 flex items-center gap-4">
                 <img
-                  src="/images/kofi-avatar.jpg"
+                  src="/images/student.webp"
                   loading="lazy"
                   alt="Kofi Mensah avatar portrait"
                   className="w-12 h-12 rounded-full object-cover bg-gray-100 shrink-0"
