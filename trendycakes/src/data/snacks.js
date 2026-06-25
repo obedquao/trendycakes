@@ -2,45 +2,44 @@ const snacks = [
   {
     name: "Cake in Cup",
     image: "/images/snacks/cup.webp",
-    promo: "GH₵ 40",
-    price: "GH₵ 30",
+
+    price: "GH₵ 40",
     details: "Available in stock",
   },
   {
     name: "Brownies",
     image: "/images/snacks/brownies.webp",
-    price: "GH₵ 60",
-    promo: "GHC 70",
+    price: "GH₵ 70",
+
     details: "Available in stock",
   },
 
   {
     name: "Large Cake in bowl",
     image: "/images/snacks/largebowl.webp",
-    price: "GH₵ 70",
-    promo: "GHC 80",
+    price: "GH₵ 80",
+
     details: "Available in stock",
   },
 
   {
     name: "Medium cake in bowl",
     image: "/images/snacks/bowl.webp",
-    price: "GH₵ 40",
-    promo: "GHC 50",
+    price: "GH₵ 50",
+
     details: "Available in stock",
   },
   {
     name: "Milky Oreo Loaf Cake",
     image: "/images/snacks/oreoloaf.webp",
-    price: "GH₵ 60",
-    promo: "GH₵ 70",
+    price: "GH₵ 70",
     details: "Available in stock",
   },
   {
     name: "Chips and Chinchin",
     image: "/images/snacks/chinchin.webp",
-    price: "GH₵ 15",
-    promo: "GH₵ 20",
+    price: "GH₵ 20",
+
     details: "Available in stock",
   },
   {
