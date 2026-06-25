@@ -2,8 +2,8 @@ const bento = [
   {
     name: "Bento",
     image: "/images/bento/bento1.webp",
-    price: "GH₵ 100",
-    promo: "GHC 120",
+    price: "GH₵ 120",
+
     details: "Available on pre-order",
   },
   {
