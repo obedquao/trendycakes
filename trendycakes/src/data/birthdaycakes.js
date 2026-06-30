@@ -263,7 +263,7 @@ const birthdayCake = [
   {
     name: "6 inches 1 layer Mini Cake",
     image: "/images/birthday/sizedtall.webp",
-    price: "GH₵ 200",
+    price: "GH₵ 650",
     details: "Available on pre-order",
   },
   {
