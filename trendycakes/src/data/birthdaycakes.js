@@ -86,7 +86,7 @@ const birthdayCake = [
   {
     name: "BMW Car Themed Cake",
     image: "/images/birthday/bmw.webp",
-    price: "GH₵ 300",
+    price: "GH₵ 550",
     details: "Available on Pre-order",
   },
   {
